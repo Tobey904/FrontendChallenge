@@ -1,0 +1,9 @@
+{
+    "/lookup": {
+      "target": "https://itunes.apple.com",
+      "secure": true,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }
+  

@@ -1,27 +1,56 @@
-# FrontendChallenge
+# 🚀 Frontend Internship Challenge 🚀
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+This is a coding challenge to verify your knowledge in the beginning of your internship at B. Braun.
+It is not a test of any kind, we just want to understand how you write code and solve problems. Based on that we can then together adjust an internship program to your individual needs.
 
-## Development server
+Please don't expect to fulfill every requirement for the challenge. It possible you will simply not have the time for that, because of the internship schedule. Just use the time you have to create whatever you can.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+You can pick your own experience level reflecting your technical skills. Feel free to mix up requirements from different experience levels if needed, to pick only ones suitable for you.
 
-## Code scaffolding
+### The Challenge
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Prepare a website which displays top 100 albums coming from iTunes API.
 
-## Build
+#### ⚫ Base Requirements For All Levels
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Good and intuitive design
+- Source code on Github (your personal account) with complete commit history (don't squash)
+- Cross browser support in newest Chrome, Safari, Firefox and Edge (if you don't have either Safari or Edge that's fine)
+- Responsiveness
+- A good user experience
+- Clean, readable, maintainable codebase
 
-## Running unit tests
+#### Levels of Experience
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 🟢 Entry
 
-## Running end-to-end tests
+- All of the base requirements
+- Implement design (HTML, CSS). For the albums you can hardcode some fake data or you can skip to Intermediate level where you fetch data from the API using JavaScript.
+- Use a CSS Framework (Bootstrap / Tailwindcss)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+### 🟠 Intermediate
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- All of the base and entry requirements
+- Fetch albums data from this API, using JavaScript: https://itunes.apple.com/us/rss/topalbums/limit=100/json
+- Allow the albums to be searchable
+- Allow the user to see more information about the selected album
+- Use Sass for custom CSS
+
+---
+
+### 🔴 Advanced
+
+- All of the base, entry and intermediate requirements
+- Use a JavaScript framework (Angular / React)
+- Use TypeScript
+- Host the website on the service of your choice (E.g.: [Github Pages](https://pages.github.com/), [Firebase](https://firebase.google.com/), [Heroku](https://www.heroku.com/), [Netlify](https://www.netlify.com/), [Vercel](https://vercel.com/))
+
+---
+
+### ⭐ Bonus Round
+
+- Surprise us! Add a feature that you think would work well here. Some examples: dark mode, filters, marking albums as favourites
+
+#### Happy coding!

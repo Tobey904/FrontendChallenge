@@ -1,0 +1,324 @@
+.album-list {
+margin: 20px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+th, td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: left;
+}
+
+th {
+background-color: #f2f2f2;
+}
+
+$color_1: #b3b3b3;
+$color_2: #ffffff;
+$color_3: #7a7a7a;
+$color_4: #000000;
+$color_5: #989898;
+$font-family_1: 'Montserrat', sans-serif;
+$background-color_1: #121212;
+$background-color_2: #000000;
+$background-color_3: #101010;
+$background-color_4: #090909;
+$background-color_5: #ffffff;
+$background-color_6: #f2f2f2;
+$background-color_7: #181818;
+$background-color_8: #252525;
+$background-color_9: #1db954;
+$border-color_1: #636363;
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+}
+.sidebar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 196px;
+	background-color: $background-color_2;
+	padding: 24px;
+	.logo {
+		img {
+			width: 130px;
+		}
+	}
+	.navigation {
+		ul {
+			list-style: none;
+			margin-top: 20px;
+			li {
+				padding: 10px 0px;
+				a {
+					color: $color_1;
+					text-decoration: none;
+					font-weight: bold;
+					font-size: 13px;
+					&:hover {
+						color: $color_2;
+						.fa {
+							color: $color_1;
+							&:hover {
+								color: $color_2;
+							}
+							&:active {
+								color: $color_2;
+							}
+							&:focus {
+								color: $color_2;
+							}
+						}
+					}
+					&:active {
+						color: $color_2;
+						.fa {
+							color: $color_1;
+						}
+					}
+					&:focus {
+						color: $color_2;
+						.fa {
+							color: $color_1;
+						}
+					}
+				}
+				.fa {
+					font-size: 20px;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	.policies {
+		position: absolute;
+		bottom: 100px;
+		ul {
+			list-style: none;
+			li {
+				padding-bottom: 5px;
+				a {
+					color: $color_1;
+					font-weight: 500;
+					text-decoration: none;
+					font-size: 10px;
+					&:hover {
+						text-decoration: underline;
+					}
+					&:active {
+						text-decoration: underline;
+					}
+					&:focus {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+.main-container {
+	margin-left: 245px;
+	margin-bottom: 100px;
+}
+.topbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: $background-color_3;
+	padding: 14px 30px;
+	.prev-next-buttons {
+		button {
+			color: $color_3;
+			cursor: not-allowed;
+			width: 34px;
+			height: 34px;
+			border-radius: 100%;
+			font-size: 18px;
+			border: 0px;
+			background-color: $background-color_4;
+			margin-right: 10px;
+		}
+	}
+	.navbar {
+		display: flex;
+		align-items: center;
+		ul {
+			list-style: none;
+			li {
+				display: inline-block;
+				margin: 0px 8px;
+				width: 70px;
+				a {
+					color: $color_1;
+					text-decoration: none;
+					font-weight: bold;
+					font-size: 14px;
+					letter-spacing: 1px;
+					&:hover {
+						color: $color_2;
+						font-size: 15px;
+					}
+					&:active {
+						color: $color_2;
+						font-size: 15px;
+					}
+					&:focus {
+						color: $color_2;
+						font-size: 15px;
+					}
+				}
+			}
+			li.divider {
+				color: $color_2;
+				font-size: 26px;
+				margin: 0px 20px;
+				width: auto;
+			}
+		}
+		button {
+			background-color: $background-color_5;
+			color: $color_4;
+			font-size: 16px;
+			font-weight: bold;
+			padding: 14px 30px;
+			border: 0px;
+			border-radius: 40px;
+			cursor: pointer;
+			margin-left: 20px;
+			&:hover {
+				background-color: $background-color_6;
+			}
+			&:active {
+				background-color: $background-color_6;
+			}
+			&:focus {
+				background-color: $background-color_6;
+			}
+		}
+	}
+}
+.spotify-playlists {
+	padding: 20px 40px;
+	h2 {
+		color: $color_2;
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	.list {
+		display: grid;
+		gap: 20px;
+		overflow: hidden;
+		.item {
+            position: relative; // Dodaj to, aby umożliwić pozycjonowanie .item-number
+            min-width: 140px;
+            width: 160px;
+            padding: 15px;
+            background-color: $background-color_7;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all ease 0.4s;
+			&:hover {
+				background-color: $background-color_8;
+				.play {
+					.fa {
+						opacity: 1;
+						transform: translateY(-20px);
+					}
+				}
+			}
+			img {
+				width: 100%;
+				border-radius: 6px;
+				margin-bottom: 10px;
+			}
+			.play {
+				position: relative;
+				.fa {
+					position: absolute;
+					right: 10px;
+					top: -60px;
+					padding: 18px;
+					background-color: $background-color_9;
+					border-radius: 100%;
+					opacity: 0;
+					transition: all ease 0.4s;
+				}
+			}
+			h4 {
+				color: $color_2;
+				font-size: 14px;
+				margin-bottom: 10px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			p {
+				color: $color_5;
+				font-size: 12px;
+				line-height: 20px;
+				font-weight: 600;
+                white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+        .item-number {
+            position: absolute;
+            top: 10px; // Dostosuj według potrzeb
+            right: 10px; // Dostosuj według potrzeb
+            color: $color_5; // Możesz zmienić kolor
+            font-size: 20px; // Dostosuj rozmiar czcionki
+            background: rgba(0, 0, 0, 0.5); // Możesz dodać tło
+            border-radius: 40%; // Opcjonalnie, aby wyglądało lepiej
+            padding: 5px; // Dostosuj padding
+          }
+	}
+	hr {
+		margin: 70px 0px 0px;
+		border-color: $border-color_1;
+	}
+}
+.preview {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(to right, #ae2896, #509bf5);
+	padding: 15px 40px;
+	display: flex;
+	justify-content: space-between;
+	h6 {
+		color: $color_2;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+	p {
+		color: $color_2;
+		font-size: 14px;
+		font-weight: 500;
+	}
+	button {
+		background-color: $background-color_5;
+		color: $color_4;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 14px 30px;
+		border: 0px;
+		border-radius: 40px;
+		cursor: pointer;
+	}
+}
+

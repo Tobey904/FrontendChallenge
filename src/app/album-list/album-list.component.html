@@ -1,0 +1,47 @@
+ <div class="spotify-playlists">
+      <h2>Spotify Playlists</h2>
+    
+      <div class="list grid grid-cols-6 gap-4">
+        <div class="item" *ngFor="let album of albums; let i = index">
+          <span class="item-number">{{ i + 1 }}</span> <!-- Dodaj numer pozycji -->
+          <img [src]="album['im:image'][2].label" alt="{{ album['im:name'].label }}" width="170" />
+          <div class="play" (click)="goToSecondComponent(album.id.attributes['im:id'])">
+            <span class="fa fa-play" ></span>
+          </div >
+          <h4>{{ album['im:name'].label }}</h4>
+          <p>{{ album['im:artist'].label }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="album-list">
+        <h2>Top Albums</h2>
+        <table>
+          <thead>
+            <tr>
+                <th>Image</th>
+                
+              <th>Name</th>
+              <th>Artist</th>
+              <th>Songs</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Release Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let album of albums">
+                <td>
+                    <img [src]="album['im:image'][2].label" alt="{{ album['im:name'].label }}" width="170" /> 
+                  </td>
+              <td>{{ album['im:name'].label }}</td>
+              <td>{{ album['im:artist'].label }}</td>
+              <td>{{ album['im:itemCount'].label }}</td>
+              <td>{{ album['category'].attributes.term }}</td>
+              <td>{{ album['im:price'].label }}</td>
+              <td>{{ album['im:releaseDate'].attributes.label }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> -->
+      
