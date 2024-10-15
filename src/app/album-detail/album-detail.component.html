@@ -1,4 +1,4 @@
-
+<div class="body">
 <!-- <div *ngIf="albumDetails">
     <h2>{{ albumDetails.results[0].collectionName }}</h2>
     <p>Artist: {{ albumDetails.results[0].artistName }}</p>
@@ -107,7 +107,7 @@
    <div *ngIf="albumDetails" class="album">
     <div class="album__info">
       <div class="album__info__art">
-        <!-- Wstaw obrazek albumu pobrany z API -->
+     
         <img [src]="albumDetails.results[0].artworkUrl100" alt="{{ albumDetails.results[0].collectionName }}" />
       </div>
       
@@ -142,7 +142,7 @@
           <div class="track__added">
             <i class="ion-checkmark-round added"></i>
           </div>
-          <div class="track__title">{{ track.trackName }}</div>
+          <div class="track__title"><span>{{ track.trackName }}</span></div>
           <div class="track__explicit" *ngIf="track.trackExplicitness === 'explicit'">
             <span class="label">Explicit</span>
           </div>
@@ -155,3 +155,4 @@
     </div>
   </div>
   
+</div>

@@ -17,14 +17,14 @@ export class AlbumDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private http: HttpClient) {}
 
   ngOnInit(): void {
-    // Pobierz id z trasy
+  
     this.albumId = this.route.snapshot.paramMap.get('id')!;
     
-    // Wywołaj API iTunes aby uzyskać szczegóły albumu
+
     this.http.get('/lookup?id=' + this.albumId + '&entity=song')
       .subscribe(data => {
         this.albumDetails = data;
-        //console.log(this.albumDetails); // Wyświetl szczegóły albumu w konsoli
+        //console.log(this.albumDetails); 
       });
   }
 }

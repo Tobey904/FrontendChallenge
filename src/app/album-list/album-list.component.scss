@@ -2,6 +2,15 @@
 margin: 20px;
 }
 
+.search-input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
+
 table {
 width: 100%;
 border-collapse: collapse;
@@ -43,171 +52,12 @@ body {
 	background-color: $background-color_1;
 	font-family: $font-family_1;
 }
-.sidebar {
-	position: fixed;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 196px;
-	background-color: $background-color_2;
-	padding: 24px;
-	.logo {
-		img {
-			width: 130px;
-		}
-	}
-	.navigation {
-		ul {
-			list-style: none;
-			margin-top: 20px;
-			li {
-				padding: 10px 0px;
-				a {
-					color: $color_1;
-					text-decoration: none;
-					font-weight: bold;
-					font-size: 13px;
-					&:hover {
-						color: $color_2;
-						.fa {
-							color: $color_1;
-							&:hover {
-								color: $color_2;
-							}
-							&:active {
-								color: $color_2;
-							}
-							&:focus {
-								color: $color_2;
-							}
-						}
-					}
-					&:active {
-						color: $color_2;
-						.fa {
-							color: $color_1;
-						}
-					}
-					&:focus {
-						color: $color_2;
-						.fa {
-							color: $color_1;
-						}
-					}
-				}
-				.fa {
-					font-size: 20px;
-					margin-right: 10px;
-				}
-			}
-		}
-	}
-	.policies {
-		position: absolute;
-		bottom: 100px;
-		ul {
-			list-style: none;
-			li {
-				padding-bottom: 5px;
-				a {
-					color: $color_1;
-					font-weight: 500;
-					text-decoration: none;
-					font-size: 10px;
-					&:hover {
-						text-decoration: underline;
-					}
-					&:active {
-						text-decoration: underline;
-					}
-					&:focus {
-						text-decoration: underline;
-					}
-				}
-			}
-		}
-	}
-}
+
 .main-container {
 	margin-left: 245px;
 	margin-bottom: 100px;
 }
-.topbar {
-	display: flex;
-	justify-content: space-between;
-	background-color: $background-color_3;
-	padding: 14px 30px;
-	.prev-next-buttons {
-		button {
-			color: $color_3;
-			cursor: not-allowed;
-			width: 34px;
-			height: 34px;
-			border-radius: 100%;
-			font-size: 18px;
-			border: 0px;
-			background-color: $background-color_4;
-			margin-right: 10px;
-		}
-	}
-	.navbar {
-		display: flex;
-		align-items: center;
-		ul {
-			list-style: none;
-			li {
-				display: inline-block;
-				margin: 0px 8px;
-				width: 70px;
-				a {
-					color: $color_1;
-					text-decoration: none;
-					font-weight: bold;
-					font-size: 14px;
-					letter-spacing: 1px;
-					&:hover {
-						color: $color_2;
-						font-size: 15px;
-					}
-					&:active {
-						color: $color_2;
-						font-size: 15px;
-					}
-					&:focus {
-						color: $color_2;
-						font-size: 15px;
-					}
-				}
-			}
-			li.divider {
-				color: $color_2;
-				font-size: 26px;
-				margin: 0px 20px;
-				width: auto;
-			}
-		}
-		button {
-			background-color: $background-color_5;
-			color: $color_4;
-			font-size: 16px;
-			font-weight: bold;
-			padding: 14px 30px;
-			border: 0px;
-			border-radius: 40px;
-			cursor: pointer;
-			margin-left: 20px;
-			&:hover {
-				background-color: $background-color_6;
-			}
-			&:active {
-				background-color: $background-color_6;
-			}
-			&:focus {
-				background-color: $background-color_6;
-			}
-		}
-	}
-}
+
 .spotify-playlists {
 	padding: 20px 40px;
 	h2 {
@@ -220,7 +70,7 @@ body {
 		gap: 20px;
 		overflow: hidden;
 		.item {
-            position: relative; // Dodaj to, aby umożliwić pozycjonowanie .item-number
+            position: relative; 
             min-width: 140px;
             width: 160px;
             padding: 15px;
@@ -275,13 +125,16 @@ body {
 		}
         .item-number {
             position: absolute;
-            top: 10px; // Dostosuj według potrzeb
-            right: 10px; // Dostosuj według potrzeb
-            color: $color_5; // Możesz zmienić kolor
-            font-size: 20px; // Dostosuj rozmiar czcionki
-            background: rgba(0, 0, 0, 0.5); // Możesz dodać tło
-            border-radius: 40%; // Opcjonalnie, aby wyglądało lepiej
-            padding: 5px; // Dostosuj padding
+            top: 5px; 
+            right: 5px; 
+            color: $color_5; 
+            font-size: 20px; 
+            background: rgba(0, 0, 0, 0.8); 
+            border-radius: 50%; 
+            //padding: 5px; 
+			width: 1.5em;
+			text-align: center;
+			height: 1.5em;
           }
 	}
 	hr {
