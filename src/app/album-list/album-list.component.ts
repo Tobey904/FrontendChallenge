@@ -3,11 +3,13 @@ import { FormsModule } from '@angular/forms';
 import { AlbumsService } from '../albums.service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import {TranslateModule} from "@ngx-translate/core";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-first',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, TranslateModule],
   templateUrl: './album-list.component.html',
   styleUrls: ['./album-list.component.scss'],
 })

@@ -4,7 +4,8 @@
   <div class="filters">
     <input 
       type="text" 
-      placeholder="Search albums..." 
+      
+      placeholder="{{ 'album-list.search.search' | translate }}" 
       [(ngModel)]="searchTerm" 
       (input)="onSearchChange()" 
       class="search-input"
@@ -13,14 +14,14 @@
     <!-- Filter by price range -->
     <input 
       type="number" 
-      placeholder="Min Price" 
+      placeholder="{{ 'album-list.search.min-price' | translate }}" 
       [(ngModel)]="minPrice" 
       (input)="onSearchChange()" 
       class="search-input"
     />
     <input 
       type="number" 
-      placeholder="Max Price" 
+      placeholder="{{ 'album-list.search.max-price' | translate }}" 
       [(ngModel)]="maxPrice" 
       (input)="onSearchChange()" 
       class="search-input"
@@ -29,14 +30,14 @@
     <!-- Filter by release date -->
     <input 
       type="date" 
-      placeholder="From Date" 
+      placeholder="{{ 'album-list.search.from-date' | translate }}" 
       [(ngModel)]="fromDate" 
       (input)="onSearchChange()" 
       class="search-input"
     />
     <input 
       type="date" 
-      placeholder="To Date" 
+      placeholder="{{ 'album-list.search.to-date' | translate }}" 
       [(ngModel)]="toDate" 
       (input)="onSearchChange()" 
       class="search-input"
@@ -48,7 +49,7 @@
       (change)="onSearchChange()" 
       class="search-input"
     >
-      <option value="">All Categories</option>
+      <option value="">{{ 'album-list.search.categories' | translate }} </option>
       <option *ngFor="let category of categories" [value]="category">
         {{ category }}
       </option>

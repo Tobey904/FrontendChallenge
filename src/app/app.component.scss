@@ -1,3 +1,117 @@
 * {
     color: white;
 }
+div
+{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+p, .translated
+{
+  background-color: #d4f3ff;
+  padding:0.5rem 1rem;
+}
+
+button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #005f73;
+  }
+}
+
+.title {
+  background-color: #bde8f8;
+  padding: 0.5rem 2rem 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 232px;
+    background-color: #000000;
+    padding: 24px;
+  
+    .logo img {
+      width: 130px;
+    }
+  
+    .navigation ul {
+      list-style: none;
+      margin-top: 20px;
+  
+      li {
+        padding: 10px 0px;
+  
+        a {
+          color: #b3b3b3;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 13px;
+  
+          &:hover, &:active, &:focus {
+            color: #ffffff;
+          }
+  
+          &:hover .fa, &:active .fa, &:focus .fa {
+            color: #b3b3b3;
+          }
+        }
+  
+        .fa {
+          font-size: 20px;
+          margin-right: 10px;
+        }
+  
+        a:hover .fa {
+          &:hover, &:active, &:focus {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  
+    .policies {
+      position: absolute;
+      bottom: 100px;
+  
+      ul {
+        list-style: none;
+  
+        li {
+          padding-bottom: 5px;
+  
+          a {
+            color: #b3b3b3;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 10px;
+  
+            &:hover, &:active, &:focus {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-container {
+    margin-left: 245px;
+    margin-bottom: 100px;
+  }

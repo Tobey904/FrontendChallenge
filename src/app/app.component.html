@@ -5,4 +5,55 @@
      <li><a routerLink="second-component" routerLinkActive="active" ariaCurrentWhenActive="page">Second Component</a></li> 
   </ul>
 </nav> -->
-<router-outlet></router-outlet>  
+<!-- <div class="title">
+  <h1>{{ 'demo.title' | translate }}</h1>
+  <span>Switch languages at runtime: </span>
+  <button (click)="useLanguage('en')">en</button>
+  <button (click)="useLanguage('pl')">pl</button>
+</div>
+<div>
+  <h2>Simple translations without parameters</h2>
+
+  <p>{{ 'demo.simple.text-with-pipe' | translate }}</p>
+
+  <p [translate]="'demo.simple.text-as-attribute'"></p>
+
+  <p>{{ 'demo.simple.text-as-content' | translate }}</p>
+</div> -->
+
+<div class="sidebar">
+  <div class="logo">
+    <span>Top 100(ish)</span>
+  </div>
+
+  <div class="navigation">
+    <ul>
+
+      <li>
+        <a href="#">
+          <span class="fa fas fa-book"></span>
+          <span>{{ 'sidebar.albums' | translate }}</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <span class="fa fas fa-heart"></span>
+          <span>{{ 'sidebar.liked' | translate }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="policies">
+    <ul>
+      <li>
+        <button (click)="useLanguage('en')">en</button>
+      </li>
+      <li>
+        <button (click)="useLanguage('pl')">pl</button>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="main-container"><router-outlet></router-outlet>  </div>

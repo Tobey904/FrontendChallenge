@@ -1,0 +1,14 @@
+{
+	"album-list.search.categories": "All categories",
+	"album-list.search.from-date": "From",
+	"album-list.search.max-price": "Max price",
+	"album-list.search.min-price": "Min price",
+	"album-list.search.search": "Search albums...",
+	"album-list.search.to-date": "To",
+	"demo.simple.text-as-attribute": "A simple text passing the ID as attribute.",
+	"demo.simple.text-as-content": "A simple test using the ID as content.",
+	"demo.simple.text-with-pipe": "A simple text using the pipe.",
+	"demo.title": "Translation Demo",
+	"sidebar.albums": "Albums",
+	"sidebar.liked": "Favourite"
+}

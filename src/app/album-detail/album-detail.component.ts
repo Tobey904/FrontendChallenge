@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-album-detail',
   templateUrl: './album-detail.component.html',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   styleUrls: ['./album-detail.component.scss'],
 })
 export class AlbumDetailComponent implements OnInit {
